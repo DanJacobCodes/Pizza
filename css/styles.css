@@ -1,6 +1,8 @@
 .jumbotron{
   text-align: center;
   font-family: fantasy;
+  background-color:#D0A79B;
+
 
 }
 .radio{
@@ -23,11 +25,17 @@
   width: auto;
 }
 
+
 ul{
   display: inline-block;
-  margin-left: %;
+  margin-left: 45%;
 }
 
 input{
   text-align: justify;
+}
+
+.well {
+  background-color:#D0A79B;
+  font-family: fantasy;
 }
