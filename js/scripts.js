@@ -9,11 +9,11 @@ var price = 8;
 Pizza.prototype.price = function () {
 
   if (this.orderSize === large) {
-    price = size.push(1 + 4);
+    price = size.(1 + 4);
   } else if (this.orderSizesize === medium) {
-    price = size(1 +2);
+    price = size(1 + 2);
   } else {
-    price = size(1+4);
+    price = size(1 + 4);
   }
 
   if (this.topping === supreme) {
