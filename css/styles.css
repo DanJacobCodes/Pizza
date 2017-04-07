@@ -1,5 +1,6 @@
 .jumbotron{
   text-align: center;
+  font-family: fantasy;
 
 }
 .radio{
@@ -7,10 +8,26 @@
 }
 
 #button{
-  float: inherit;
+  margin-left: 45%;
+  margin-top: 25px;
+  padding-top: 15px;
   text-align: center;
 }
 
 #orderSummary{
   display: none;
+}
+
+#logo{
+  word-wrap: normal;
+  width: auto;
+}
+
+ul{
+  display: inline-block;
+  margin-left: %;
+}
+
+input{
+  text-align: justify;
 }

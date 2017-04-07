@@ -9,6 +9,10 @@
 Pizza Order will allow users to simply order pizza by selecting a range of options using radio buttons. Users will be able to select size, and toppings for their pizza. In addition to ordering a pizza of their liking they will also be able to see the cost of their pizza.
 
 ## Specs
+Input | Output
+------|--------
+Input
+User selects Medium Supreme | Medium Pizza $x
 
 
 

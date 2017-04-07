@@ -5,7 +5,7 @@ function Pizza(toppings, size){
   this.toppings = toppings;
 }
 
-Pizza.prototype.price = function () {
+Pizza.prototype.prices = function () {
   var price = 8;
   if (this.size === large) {
     price = size(1 + 4);
@@ -14,19 +14,16 @@ Pizza.prototype.price = function () {
   } else {
     price = size(1+4)
   }
-  return price;
 
-  console.log(price);
-
-
-};
-// Pizza.prototype.toppingAddition = function () {
-//   if(this.toppings === plain){
-//     price = toppings(+1)
-//   }
-//
-// };
-
+  if (this.topping === supreme) {
+    price = toppings(+4);
+  } else if (this.toppping = veggie) {
+      price = toppings(+2);
+    } else {
+        price = toppings();
+      }
+      return price;
+    }
 
 //User Interface Logic//
 $(document).ready(function(){
@@ -37,10 +34,10 @@ $(document).ready(function(){
     var pizzaTopping = $("input[type=radio][name=topping]:checked").val();
 
     var pizzaOrder = pizzaSize + " " + pizzaTopping;
-    var finalPrice = new Pizza();
+    var finalPrice =  new Pizza;
 
     $("#orderSummary").show();
-    $("ul#orderSummary").append("<li>"+ pizzaOrder + "</li>")
+    $("ul#orderSummary").append("<li>"+ pizzaOrder + price + "</li>")
 
 
 
