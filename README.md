@@ -9,20 +9,21 @@
 Pizza Order will allow users to simply order pizza by selecting a range of options using radio buttons. Users will be able to select size, and toppings for their pizza. In addition to ordering a pizza of their liking they will also be able to see the cost of their pizza.
 
 ## Specs
-1. User must click both fields
-⋅⋅1. Input :User clicks small
-  2. Output : Small undefined
+### User must click both fields
+ -- . Input :User clicks small
+  -- . Output : Small undefined
 
 
 
-1. If user clicks a size and topping their order will appear
-⋅⋅1. Input: Small Pepperoni
-  2. Output: Small Pepperoni
+### If user clicks a size and topping their order will appear
+--  . Input: Small Pepperoni
+  --  . Output: Small Pepperoni
 
 
-1. Price will be calculated and displayed
-⋅⋅1. Input: Small Pepperoni
-  2. Output: Small Pepperoni $8
+### Price will be calculated and displayed
+--  . Input: Small Pepperoni
+  --  . Output: Small Pepperoni $8
+
 
 
 ## Setup/Installation Requirements
