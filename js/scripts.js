@@ -15,9 +15,11 @@ Pizza.prototype.price = function () {
     price = size(1+4)
   }
   return price;
- console.log(Pizza);
-};
 
+  console.log(price);
+
+
+};
 // Pizza.prototype.toppingAddition = function () {
 //   if(this.toppings === plain){
 //     price = toppings(+1)
@@ -34,10 +36,11 @@ $(document).ready(function(){
     var pizzaSize = $("input[type=radio][name=size]:checked").val();
     var pizzaTopping = $("input[type=radio][name=topping]:checked").val();
 
-    var pizzaOrder = new Pizza(pizzaSize, pizzaTopping);
+    var pizzaOrder = pizzaSize + " " + pizzaTopping;
+    var finalPrice = new Pizza();
 
     $("#orderSummary").show();
-    $("ul#orderSummary").append("<li>")
+    $("ul#orderSummary").append("<li>"+ pizzaOrder + "</li>")
 
 
 
