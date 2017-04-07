@@ -10,3 +10,7 @@
   float: inherit;
   text-align: center;
 }
+
+#orderSummary{
+  display: none;
+}

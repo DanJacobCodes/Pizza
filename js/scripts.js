@@ -6,14 +6,24 @@ function Pizza(toppings, size){
 }
 
 Pizza.prototype.price = function () {
-  var price = [];
-  if (this.size === small) {
-
-
+  var price = 8;
+  if (this.size === large) {
+    price = size(1 + 4);
+  } else if (this.size === medium) {
+    price = size(1 +2);
+  } else {
+    price = size(1+4)
   }
+  return price;
 
 };
 
+Pizza.prototype.toppingAddition = function () {
+  if(this.toppings === plain){
+    price = toppings(+1)
+  }
+
+};
 
 
 //User Interface Logic//
@@ -21,8 +31,14 @@ $(document).ready(function(){
   $("form#order").submit(function(event){
     event.preventDefault()
 
-    $( "input[type=radio][name=size]:checked" ).val();
-    $( "input[type=radio][name=topping]:checked" ).val();
+    var pizzaSize = $("input[type=radio][name=size]:checked").val();
+    var pizzaTopping = $("input[type=radio][name=topping]:checked").val();
+
+    var pizzaOrder = new Pizza(pizzaSize, pizzaTopping);
+
+
+
+    $("ul#orderSummary").append("<li><span class ='placeHolder'> + newPizza ")
 
 
 
@@ -30,5 +46,5 @@ $(document).ready(function(){
 
 
 
-
-}
+  });
+});
