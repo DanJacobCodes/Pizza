@@ -39,3 +39,12 @@ input{
   background-color:#D0A79B;
   font-family: fantasy;
 }
+
+body{
+  background-color: #ECE0E0;
+}
+
+label{
+  font-size: 16pt;
+  font-family: sans-serif;
+}

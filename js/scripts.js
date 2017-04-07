@@ -5,7 +5,7 @@ function Pizza(toppings, size){
   this.toppings = toppings;
 }
 
-var price = {};
+var price = 8;
 Pizza.prototype.price = function () {
 
   if (this.orderSize === large) {
