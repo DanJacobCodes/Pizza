@@ -6,7 +6,9 @@ function Pizza(toppings, size){
 }
 
 Pizza.prototype.price = function () {
-  if () {
+  var price = [];
+  if (this.size === small) {
+
 
   }
 
@@ -16,10 +18,17 @@ Pizza.prototype.price = function () {
 
 //User Interface Logic//
 $(document).ready(function(){
+  $("form#order").submit(function(event){
+    event.preventDefault()
+
+    $( "input[type=radio][name=size]:checked" ).val();
+    $( "input[type=radio][name=topping]:checked" ).val();
 
 
 
 
 
-    
+
+
+
 }
