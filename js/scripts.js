@@ -15,30 +15,29 @@ Pizza.prototype.price = function () {
     price = size(1+4)
   }
   return price;
-
+ console.log(Pizza);
 };
 
-Pizza.prototype.toppingAddition = function () {
-  if(this.toppings === plain){
-    price = toppings(+1)
-  }
-
-};
+// Pizza.prototype.toppingAddition = function () {
+//   if(this.toppings === plain){
+//     price = toppings(+1)
+//   }
+//
+// };
 
 
 //User Interface Logic//
 $(document).ready(function(){
   $("form#order").submit(function(event){
-    event.preventDefault()
+    event.preventDefault();
 
     var pizzaSize = $("input[type=radio][name=size]:checked").val();
     var pizzaTopping = $("input[type=radio][name=topping]:checked").val();
 
     var pizzaOrder = new Pizza(pizzaSize, pizzaTopping);
 
-
-
-    $("ul#orderSummary").append("<li><span class ='placeHolder'> + newPizza ")
+    $("#orderSummary").show();
+    $("ul#orderSummary").append("<li>")
 
 
 
