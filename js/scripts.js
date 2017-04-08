@@ -1,12 +1,15 @@
 //Business Logic//
+var pricr =8;
 
 function Pizza(toppings, size){
   this.orderSize = size;
   this.toppings = toppings;
 }
 
-var price = 8;
+
 Pizza.prototype.price = function () {
+
+  var price = 8;
 
   if (this.orderSize === large) {
     price = size.(1 + 4);
