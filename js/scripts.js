@@ -1,36 +1,22 @@
 //Business Logic//
-var pricr =8;
 
-function Pizza(toppings, size){
-  this.orderSize = size;
+
+function Pizza(toppings, size, cost){
   this.toppings = toppings;
+  this.size = size;
+  this.cost = 8;
 }
 
-
-Pizza.prototype.price = function () {
-
-  var price = 8;
-
-  if (this.orderSize === large) {
-    price = size.(1 + 4);
-  } else if (this.orderSizesize === medium) {
-    price = size(1 + 2);
-  } else {
-    price = size(1 + 4);
-  }
-
-  if (this.topping === supreme) {
-    price = toppings(+4);
-  } else if (this.toppping = veggie) {
-      price = toppings(+2);
-    } else {
-        price = toppings();
-      }
-      return price;
-    }
-
-
-
+Pizza.prototype.price = function() {
+if (this.size === large) {
+  this.cost += *1+4
+}
+else if(this.size === medium){
+  this.cost += *1+2
+}
+else if(this.size === small){
+  this.cost += *1+2
+}
 
 //User Interface Logic//
 $(document).ready(function(){
@@ -44,7 +30,7 @@ $(document).ready(function(){
     var finalPrice = price;
 
     $("#orderSummary").show();
-    $("ul#orderSummary").append("<li>"+ pizzaOrder + " $" + finalPrice  + "</li>");
+    $("#orderSummary").append("<li>"+ pizzaOrder + " $" + finalPrice  + "</li>");
 
 
 
