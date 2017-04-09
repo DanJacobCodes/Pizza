@@ -8,15 +8,28 @@ function Pizza(toppings, size, cost){
 }
 
 Pizza.prototype.price = function() {
-if (this.size === large) {
-  this.cost += *1+4
+if (this.size === "large") {
+  this.cost += 4
 }
-else if(this.size === medium){
-  this.cost += *1+2
+else if(this.size === "medium"){
+  this.cost += 2
 }
-else if(this.size === small){
-  this.cost += *1+2
+else if(this.size === "small"){
+  this.cost += 1
 }
+else if (this.toppings === "peppers"){
+  this.cost += 1;
+}
+else if (this.toppings === "veggie"){
+  this.cost += 2;
+}
+else if (this.toppings === "supreme"){
+  this.cost += 3;
+    }
+    return this.cost;
+  }
+
+
 
 //User Interface Logic//
 $(document).ready(function(){
@@ -26,15 +39,11 @@ $(document).ready(function(){
     var pizzaSize = $("input[type=radio][name=size]:checked").val();
     var pizzaTopping = $("input[type=radio][name=topping]:checked").val();
 
-    var pizzaOrder = pizzaSize + " " + pizzaTopping;
-    var finalPrice = price;
+    var pizzaOrder = new Pizza(pizzaSize,pizzaTopping);
+    var finalPrice = Pizza;
 
-    $("#orderSummary").show();
-    $("#orderSummary").append("<li>"+ pizzaOrder + " $" + finalPrice  + "</li>");
-
-
-
-
+    $("#orderSummary").show(finalPrice);
+    $("#orderSummary").append("<li>"+ finalPrice + " $" +  "</li>");
 
 
     });
