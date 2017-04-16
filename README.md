@@ -1,6 +1,6 @@
 # Pizza Order
 
-#### A simple program to using radio buttons to order pizza, March 31, 2017
+#### A simple program to using radio buttons to order pizza, April 10th, 2017
 
 #### By Dan Jacob
 
@@ -9,20 +9,21 @@
 Pizza Order will allow users to simply order pizza by selecting a range of options using radio buttons. Users will be able to select size, and toppings for their pizza. In addition to ordering a pizza of their liking they will also be able to see the cost of their pizza.
 
 ## Specs
-### User must click both fields
- -- . Input :User clicks small
-  -- . Output : Small undefined
+* When users select a size and toppings through radio buttons, user interface logic will gather input
+  * Input: Large, Pepperoni
 
+* Once size and topping have been selected users will able to see the final cost of their selection
+  * Input: Large, Pepperoni
+  * Output: $13
 
+* When method .price() is called on the Pizza object, the price of the pizza object will be calculated in the Business Logic using branching to return a final cost.
+  * Example User Input: Large, Pepperoni
+  * Backend Logic: Pizza.prototype.price() else if (this.size === "large") {
+    this.pizzaPrice += 9;
+  }
 
-### If user clicks a size and topping their order will appear
---  . Input: Small Pepperoni
-  --  . Output: Small Pepperoni
-
-
-### Price will be calculated and displayed
---  . Input: Small Pepperoni
-  --  . Output: Small Pepperoni $8
+* Variable in front end logic will collect data from user inputs, as well Pizza object   
+  * var pizzaOrder = new Pizza(pizzaSize,pizzaTopping).price();
 
 
 
@@ -39,4 +40,4 @@ If any issues occur contact me at dansamueljacob@gmail.com
  HTML, CSS, Bootstrap, JavaScript, jQuery
 
 ### License
-Copyright (c) 2016 Dan Jacob
+Copyright (c) 2017 Dan Jacob
