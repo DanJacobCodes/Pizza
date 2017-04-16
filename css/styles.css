@@ -1,7 +1,7 @@
 .jumbotron{
   text-align: center;
   font-family: 'Tangerine', cursive;
-  background-color:#D0A79B;
+  background-color:#009246;
 
 
 }
@@ -10,7 +10,7 @@
 }
 
 #button{
-  margin-left: 45%;
+  margin-left: 47%;
   margin-top: 25px;
   padding-top: 15px;
   text-align: center;
@@ -36,15 +36,31 @@ input{
 }
 
 .well {
-  background-color:#D0A79B;
-  font-family: fantasy;
+  background-color:#ce2b37;
+  font-size: 48pt;
+  font-family: cursive;
+  color: white
 }
 
 body{
-  background-color: #ECE0E0;
+  background-color:white;
 }
 
 label{
   font-size: 16pt;
   font-family: sans-serif;
+}
+
+#orderSummary{
+  margin-top: 30px;
+  font-size: 40pt;
+  list-style: none;
+}
+#header{
+  color: white;
+}
+#slogan{
+  list-style: none;
+  font-size: 28pt;
+  color: white;
 }
