@@ -23,6 +23,16 @@ Pizza.prototype.price = function () {
   else if (this.toppings === "supreme") {
     this.pizzaPrice += 5;
   }
+  else if (this.toppings === "pepperoni") {
+    this.pizzaPrice += 4;
+  }
+  else if (this.toppings === "bacon") {
+    this.pizzaPrice += 5;
+  }
+  else if (this.toppings === "pineapple") {
+    this.pizzaPrice += 6;
+  }
+
     return this.pizzaPrice;
 }
 
@@ -35,8 +45,6 @@ $(document).ready(function(){
     var pizzaTopping = $("input[type=radio][name=topping]:checked").val();
 
     var pizzaOrder = new Pizza(pizzaSize,pizzaTopping).price();
-
-
 
     $("#orderSummary").show();
     $("#orderSummary").append("<li>" +"$" + pizzaOrder + "</li>");
